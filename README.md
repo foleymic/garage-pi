@@ -51,7 +51,18 @@ password: raspberry
    * `sudo cp -R * /usr/local/`
 6. Install git
  * `sudo apt-get install -y git`
-7. Clone this repo.
- * `git clone 
+7. Install yarn
+ * `sudo npm install -g yarn`
+ 
+## setup Garage-PI
+1. Clone this repo.
+ * `git clone https://github.com/foleymic/garage-pi.git`
+ * `cd garage-pi`
+2. Download packages
+ * `yarn`
+3. Start it up...
+ * `yarn controller`
+ 
+ 
 ## License
 MIT
