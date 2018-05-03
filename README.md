@@ -50,7 +50,7 @@ password: raspberry
    * `cd node-xxxx`
    * `sudo cp -R * /usr/local/`
 6. Install git and some other dependencies needed to compile [HAP-NodeJS](https://github.com/KhaosT/HAP-NodeJS/wiki/Installing)
- * `sudo apt-get install -y git git-core libnss-mdns libavahi-compat-libdnssd-dev`
+ * `sudo apt-get install -y git git-core libnss-mdns libavahi-compat-libdnssd-dev libav-tools`
 7. Install yarn
  * `sudo npm install -g yarn`
  
