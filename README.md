@@ -41,7 +41,7 @@ password: raspberry
 5. [Install nodejs](http://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/)
  * `uname -m`
  * Get [nodejs](https://nodejs.org/en/download/)
- * Right-click to copy the download link for your version of **ARM**
+ * Right-click to copy the download link for your version for **ARM**
  * Run the following command to from your ssh session to download nodejs - be sure to change the link to end in **gz**
    * ` wget https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-armv6l.tar.gz`
  * Extract the gzip
