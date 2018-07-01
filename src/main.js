@@ -42,14 +42,17 @@ async function controller() {
   });
 
   function doorState() {
-    return new Promise(doorState => doorController.isDoorOpened()
-    ? Characteristic.TargetDoorState.OPEN
-    : Characteristic.TargetDoorState.CLOSED)
+    return new Promise(doorState => {
+      if (doorController.isDoorOpened())
+        return Characteristic.TargetDoorState.OPEN
+      else
+        return Characteristic.TargetDoorState.CLOSED
+    })
   }
   // const doorState = () => doorController.isDoorOpened()
   //   ? Characteristic.TargetDoorState.OPEN
   //   : Characteristic.TargetDoorState.CLOSED;
-
+  debug ('Testing 1...2...3...');
   const initialDoorState = await doorState();
 
   debug('initial door state', initialDoorState);
